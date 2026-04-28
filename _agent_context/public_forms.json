@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "rechnungen",
+      "app_id": "69b89166574efe552fa528fa",
+      "path": "/rest/apps/69b89166574efe552fa528fa/records",
+      "allowed_fields": [
+        "rechnungsnummer",
+        "rechnungsdatum",
+        "faelligkeitsdatum",
+        "kunde_vorname",
+        "kunde_nachname",
+        "kunde_firma",
+        "kunde_email",
+        "kunde_telefon",
+        "kunde_strasse",
+        "kunde_hausnummer",
+        "kunde_plz",
+        "kunde_ort",
+        "zahlungsbedingungen",
+        "bankverbindung",
+        "bemerkungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Rechnungen — Formular"
+    },
+    {
+      "entity": "rechnungspositionen",
+      "app_id": "69b8916778e07ae8842ea5b9",
+      "path": "/rest/apps/69b8916778e07ae8842ea5b9/records",
+      "allowed_fields": [
+        "positionsnummer",
+        "menge",
+        "einheit_position",
+        "einzelpreis_netto_pos",
+        "mwst_satz_pos",
+        "gesamtbetrag_netto",
+        "positionsnotiz"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Rechnungspositionen — Formular"
+    },
+    {
+      "entity": "artikelkatalog",
+      "app_id": "69b8916378e0e1c2eef5283c",
+      "path": "/rest/apps/69b8916378e0e1c2eef5283c/records",
+      "allowed_fields": [
+        "artikelnummer",
+        "bezeichnung",
+        "beschreibung",
+        "einheit",
+        "einzelpreis_netto",
+        "mwst_satz"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Artikelkatalog — Formular"
+    }
+  ]
+}
